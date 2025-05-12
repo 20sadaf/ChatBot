@@ -1,327 +1,91 @@
-version: "3.0"
-nlu:
+version: "3.1"
 
+nlu:
 - intent: greet
   examples: |
-    - Hi
-    - Hello
-    - Hey there
-    - Good morning
-    - What's up
-    - Hi bot
-    - Hey!
-    - Hello assistant
-    - Howdy
-    - Greetings 
-    - What's going on
-    - How are you?
-    - How's it going?
-    - How are you doing?
-    - How's everything?
-    - How's life?
-
-- intent: affirm
-    examples: |
-        - Yes
-        - Sure
-        - Absolutely
-        - Of course
-        - Definitely
-        - That's right
-        - Exactly
-        - I agree
-        - Sounds good
-        - Correct
-        - That's true
-        - Right
-        - Indeed
-        - You got it
-        - That's correct
-        - Totally
-
-- intent: deny
-    examples: |
-        - No
-        - Nope
-        - Not really
-        - I don't think so
-        - Absolutely not
-        - No way
-        - Not at all
-        - That's not true
-        - I disagree
-        - Negative
-        - No thanks
-        - Never
-        - Not interested
-        - Not for me
-        - I don't want that
-        - Not a chance
-
-- intent: ask_help
-  examples: |
-    - Can you help me?
-    - I need assistance
-    - Help me out
-    - Can you assist me?
-    - I need some help
-    - Can you support me?
-    - I require help
-    - Please help me
-    - I need guidance
-    - Can you guide me?
-    - I need your help
-    - Can you give me a hand?
-    - Help me please
-    - I need your assistance
-    - Can you help me out?
-
-
-- intent: ask_contact
-  examples: |
-    - How can I contact you?
-    - What’s your contact information?
-    - Can I reach you by email?
-    - How do I get in touch with you?
-    - What’s the best way to contact you?
-    - Do you have a phone number?
-    - Can I call you?
-    - How can I reach you?
-- intent: ask_email
-  examples: |
-    - What’s your email address?
-    - Can you provide your email?
-    - How can I email you?
-    - Do you have an email I can use?
-    - What’s the best email to reach you?
-    - Can I send you an email?
-    - What’s your contact email?
-    - How do I email you?
-
-- intent: ask_location
-  examples: |
-    - Where are you located?
-    - Where can I find you?
-    - What is your location?
-    - Where do you live?
-    - Can you tell me your location?
-    - Where can I reach you?
-    - What’s your address?
-    - Where are you based?
-
-- intent: ask_time_zone
-  examples: |
-    - What time zone are you in?
-    - Can you tell me your time zone?
-    - What’s your current time zone?
-    - Where are you in terms of time zone?
-    - What is your time zone?
-    - Can you share your time zone with me?
-    - What’s the time difference?
-    - Which time zone do you follow?
-
-- intent: ask_time
-  examples: |
-    - What time is it?
-    - Can you tell me the time?
-    - What’s the current time?
-    - How late is it?
-    - What’s the time now?
-    - Can you check the time for me?
-    - Tell me the current time
-    - What’s the hour now?
-
-- intent: ask_weather
-    examples: |
-        - What’s the weather like?
-        - How's the weather today?
-        - Can you tell me the weather?
-        - What's the forecast?
-        - Is it going to rain today?
-        - How's the temperature?
-        - What's the weather report?
-        - Is it sunny outside?
-
-- intent: ask_joke
-  examples: |
-    - Tell me a joke
-    - Can you make me laugh?
-    - Do you know any funny jokes?
-    - Share a joke with me
-    - I need a good laugh
-    - Can you tell me something funny?
-    - Make me smile with a joke
-    - Give me a humorous story  
-- intent: ask_fact
-  examples: |
-    - Tell me a fact
-    - Can you share an interesting fact?
-    - What’s a fun fact?
-    - Give me a random fact
-    - Share something cool with me
-    - Do you know any amazing facts?
-    - Tell me something surprising
-    - Can you give me a trivia fact?
-
-- intent: ask_quote
-  examples: |
-    - Give me a quote
-    - Can you share an inspirational quote?
-    - Tell me something motivational
-    - I need a quote to inspire me
-    - Share a famous quote
-    - Can you give me a wise saying?
-    - What’s a good quote for today?
-    - Tell me a thought-provoking quote 
-- intent: ask_opinion
-  examples: |
-    - What do you think about this?
-    - Can you share your opinion?
-    - What’s your take on this?
-    - I need your perspective
-    - How do you feel about it?
-    - Can you give me your thoughts?
-    - What’s your view on this matter?
-    - Share your opinion with me
-
-- intent: ask_advice
-    examples: |
-        - Can you give me some advice?
-        - I need your guidance
-        - What do you suggest?
-        - Can you help me with some tips?
-        - Share some advice with me
-        - What’s your opinion on this?
-        - I need your insight
-        - Can you offer me some counsel?
-
-- intent: ask_favorite
-    examples: |
-        - What’s your favorite color?
-        - Do you have a favorite food?
-        - What’s your favorite movie?
-        - Can you tell me your favorite book?
-        - What’s your favorite hobby?
-        - Do you have a favorite song?
-        - What’s your favorite place to visit?
-        - Can you share your favorite activity?
-
-- intent: ask_hobby
-    examples: |
-        - What do you like to do?
-        - Do you have any hobbies?
-        - What’s your favorite pastime?
-        - Can you tell me about your interests?
-        - What do you enjoy doing in your free time?
-        - Do you have any favorite activities?
-        - What’s your favorite way to relax?
-        - Can you share your hobbies with me?
-
-- intent: ask_name
-  examples: |
-    - What is your name?
-    - Can you tell me your name?
-    - What's your name?
-    - Do you have a name?
-    - How should I call you?
-    - What do you go by?
-    - Can I know your name?
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
 
 - intent: goodbye
   examples: |
-    - Bye
-    - See you later
-    - Goodbye
-    - Talk to you later
-    - Catch you later
-    - See ya
-    - I'm done
-    - That's all, thanks
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
 
-- intent: thank_you
+- intent: affirm
   examples: |
-    - Thanks
-    - Thank you
-    - Much appreciated
-    - Thanks a lot
-    - Appreciate your help
-    - Thank you so much
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
 
-- intent: ask_course_info
+- intent: deny
   examples: |
-    - Tell me about the AI course
-    - What does the Python course cover?
-    - Give me details about Machine Learning
-    - What's in the Web Development class?
-    - Explain the content of the Data Structures course
-    - What will I learn in Cybersecurity?
-    - Give me an overview of Operating Systems
-    - Can you explain the DBMS subject?
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
 
-- intent: ask_exam_dates
+- intent: mood_great
   examples: |
-    - When is the next exam?
-    - What’s the date of the midterm?
-    - Tell me the final exam schedule
-    - Are the tests scheduled?
-    - When will the exams start?
-    - I want to know the exam dates
-    - Is there an exam next week?
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
 
-- intent: ask_assignment_deadline
+- intent: mood_unhappy
   examples: |
-    - When is the assignment due?
-    - What's the last date to submit?
-    - Tell me the assignment deadline
-    - Deadline for the project?
-    - Is there a submission date?
-    - By when should I submit the homework?
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
 
-- intent: ask_study_material
+- intent: bot_challenge
   examples: |
-    - Do you have notes for Machine Learning?
-    - Share study material for Python
-    - Where can I find DBMS notes?
-    - Can I get the PDF for AI?
-    - Send me lecture slides for Web Development
-    - Do you have links to online study resources?
-
-- intent: ask_syllabus
-  examples: |
-    - What's the syllabus for Data Structures?
-    - Tell me the topics in AI
-    - Give me the ML syllabus
-    - What chapters are included in Operating Systems?
-    - Syllabus details for Cybersecurity?
-    - What should I study for DBMS?
-
-- intent: ask_faculty_info
-  examples: |
-    - Who teaches Software Engineering?
-    - Tell me the professor for AI
-    - Who is the faculty for DBMS?
-    - Give me instructor details for Python
-    - Who handles Data Science class?
-    - Instructor for Web Development?
-
-- intent: programming_help
-  examples: |
-    - How do I write a for loop in Python?
-    - Show me an example of if-else in C++
-    - What’s the syntax for a function in Java?
-    - Help me write a while loop
-    - What’s the use of recursion?
-    - How do I take user input in Python?
-    - How to declare an array in Java?
-
-- intent: ask_project_guidance
-  examples: |
-    - Can you help me with my project?
-    - I need guidance on my assignment
-    - How do I start my project?
-    - What should I include in my project?
-    - Can you suggest a project topic?
-    - I need help with my final year project
-    - How do I approach this assignment?
-    
-
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

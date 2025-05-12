@@ -1,53 +1,34 @@
-actions:
-  - action_get_exam_dates
-  - action_random_motivation
-
-version: "3.0"
+version: "3.1"
 
 intents:
   - greet
   - goodbye
-  - thank_you
-  - ask_course_info
-  - ask_exam_dates
-  - ask_assignment_deadline
-  - ask_study_material
-  - ask_syllabus
-  - ask_faculty_info
-  - programming_help
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
 
 responses:
   utter_greet:
-    - text: "Hello! How can I help you today?"
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
 
   utter_goodbye:
-    - text: "Goodbye! Have a great day."
+  - text: "Bye"
 
-  utter_thank_you:
-    - text: "You're welcome!"
-
-  utter_ask_course_info:
-    - text: "We offer courses like AI, Python, Data Structures, and more. Which one do you want to know about?"
-
-  utter_ask_exam_dates:
-    - text: "The exam dates will be announced soon. Please check the academic calendar."
-
-  utter_ask_assignment_deadline:
-    - text: "Assignment deadlines vary by course. Can you tell me which subject?"
-
-  utter_ask_study_material:
-    - text: "Sure! I can share notes or links. Please mention the course."
-
-  utter_ask_syllabus:
-    - text: "You can view the syllabus on the official site, or let me know the subject and I’ll summarize it."
-
-  utter_ask_faculty_info:
-    - text: "Let me check... Which course or subject are you asking about?"
-
-  utter_programming_help:
-    - text: "Sure! Ask me a programming question, and I’ll do my best to help you."
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-

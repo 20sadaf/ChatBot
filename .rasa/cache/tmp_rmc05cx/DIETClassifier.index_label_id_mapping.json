@@ -1,0 +1,12 @@
+{
+  "0": "ask_assignment_deadline",
+  "1": "ask_course_info",
+  "2": "ask_exam_dates",
+  "3": "ask_faculty_info",
+  "4": "ask_study_material",
+  "5": "ask_syllabus",
+  "6": "goodbye",
+  "7": "greet",
+  "8": "programming_help",
+  "9": "thank_you"
+}

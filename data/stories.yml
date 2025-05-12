@@ -1,26 +1,30 @@
-version: "3.0"
+version: "3.1"
+
 stories:
 
-- story: greet and ask course
+- story: happy path
   steps:
-    - intent: greet
-    - action: utter_greet
-    - intent: ask_course_info
-    - action: utter_ask_course_info
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
 
-- story: ask exam and say thanks
+- story: sad path 1
   steps:
-    - intent: ask_exam_dates
-    - action: utter_ask_exam_dates
-    - intent: thank_you
-    - action: utter_thank_you
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
 
-- story: ask programming help
+- story: sad path 2
   steps:
-    - intent: programming_help
-    - action: utter_programming_help
-
-- story: goodbye
-  steps:
-    - intent: goodbye
-    - action: utter_goodbye
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
